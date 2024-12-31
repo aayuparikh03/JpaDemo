@@ -12,3 +12,5 @@
         <mapping class="org.example.entities.Student"/>
     </session-factory>
 </hibernate-configuration>
+
+
