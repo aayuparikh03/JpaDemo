@@ -34,6 +34,11 @@
                 <artifactId>jakarta.persistence-api</artifactId>
                 <version>3.1.0</version>
             </dependency>
+            <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP</artifactId>
+                <version>6.2.1</version>
+            </dependency>
 
             <!-- Jakarta Transaction API -->
             <dependency>
