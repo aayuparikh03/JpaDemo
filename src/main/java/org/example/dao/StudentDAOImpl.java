@@ -16,7 +16,6 @@ public class StudentDAOImpl implements StudentDAO{
     public StudentDAOImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
-
     @Override
     public void saveStudent(Student student) {
         try(Session session=sessionFactory.openSession()){
@@ -26,14 +25,12 @@ public class StudentDAOImpl implements StudentDAO{
         }
 
     }
-
     @Override
     public Student getStudentByID(long id) {
         try(Session session= sessionFactory.openSession()) {
             return session.get(Student.class,id);
         }
     }
-
     @Override
     public List<Student> getAllStudents() {
         try (Session session= sessionFactory.openSession()){
