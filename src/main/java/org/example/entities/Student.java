@@ -13,6 +13,15 @@ public class Student {
     @Column(name = "name")
     private String name;
 
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
     public int getId() {
         return id;
     }
