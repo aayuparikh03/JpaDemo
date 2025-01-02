@@ -19,7 +19,6 @@ public class Main {
         try{
             session.beginTransaction();
             Student s=new Student();
-            s.setId(6);
             s.setName("Pasta");
             session.persist(s);
             session.getTransaction().commit();
